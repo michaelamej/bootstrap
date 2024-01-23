@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f1f3f4;
+    font-family: sans-serif;
+}
+.top-nav-bar {
+    height: 90px;
+    top: 0;
+    position: sticky;
+    background: #fff;
+    margin-bottom: 20px;
+    border-bottom: 3px solid pink;
+    z-index: 2; 
+}
+.logo{
+    height: 67px;
+    margin: 5px 10px;
+}
+.form-control{
+    margin-top: 9px;
+    margin-left: 30PX;
+    border: 4px solid pink !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #ced4da;
+    border: 4px solid #ced4da;
+    border-radius: .25rem;
+
+    background: pink;
+    border: 4px solid pink;
+    margin: 8.5px 10px 1px 0;
+    border-bottom-right-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    /*margin-left: 5px;*/
+}
+.search-box {
+    display: inline-flex;
+    width: 60%;
+}
+
+span.material-symbols-outlined.search {
+    color: white;
+    font-size: xx-large;
+}
+.menu-bar{
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+.menu-bar ul{
+    display: inline-flex;
+    float: right;
+}
+.menu-bar ul li {
+    border-left: 1px solid #fff;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+    background-color: pink;
+    cursor: pointer;
+}
+.menu-bar ul li a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+span.material-symbols-outlined.basket{
+    margin-right: 5px;
+    font-size: large;
+}
+@media only screen and (max-width: 980px) {
+    .top-nav-bar{
+        height:118px;
+        border-bottom: 0;
+    }
+    .search-box{
+        width: 100%;
+    }
+    .menu-bar{
+        width: 100%;
+    }
+    .menu-bar ul{
+        margin: 10px 0;
+        width: 100%;
+        padding-left: 0;
+    }
+    .menu-bar ul li{
+        height: 57px;
+        width: 100%;
+    }
+}
