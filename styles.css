@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 body{
     background-color: #f1f3f4;
     font-family: sans-serif;
@@ -111,5 +114,107 @@ span.material-symbols-outlined.basket{
     .menu-bar ul li{
         height: 57px;
         width: 100%;
+    }
+}
+
+/*------------side menu---------*/
+
+.side-menu{
+    height: 79%;
+    width: 15%;
+    font-size: 14px;
+    float: left;
+    z-index: 2;
+    background-color: #ddd;
+}
+.side-menu ul {
+    margin-left: 10px;
+}
+.side-menu ul li {
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.side-menu ul li:hover{
+    color: palevioletred;
+}
+.side-menu ul li ul{
+    display: none;
+    z-index: 10;
+    top: 77px;
+
+}
+.side-menu ul li:hover ul{
+    display: block;
+    height: 400px;
+    margin-left: 11%;
+    padding: 0 100px 10px 10px;
+    position: fixed;
+    background: #ececec;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+    margin-top: 2.75%;
+    transform: ease;
+
+}
+span.material-symbols-outlined.arrow{
+    margin-top: 4px;
+    margin-right: 8px;
+    float: right;
+}
+#menu-btn, #close-btn {
+    font-size: 30px;
+    margin: 10px;
+    color: pink;
+    display: none;
+}
+@media only screen and (max-width: 980px){
+    .side-menu{
+        width: 34%;
+        z-index: 20;
+        top: 133px;
+        position: fixed;
+        font-size: 12px;
+        background: #f1f3f4;
+        display:none;
+    }
+    .side-menu ul li ul{
+        top: 133px;
+    }
+    .side-menu ul li:hover ul{
+       margin-left: 31%; 
+    }
+    #menu-btn{
+        display: block;
+    }
+    span#menu-btn {
+        margin-top: 1.5%;
+        font-size: xxx-large;
+    }
+    span#close-btn {
+        font-size: xxx-large;
+        margin-top: 1.5%;
+    }
+}
+/*---------slider mechanisc-------*/
+
+
+.slider{
+    width: 85%;
+    margin-left: 15%;
+    padding: 0 10px;
+}
+.carousel{
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+.carousel-indicators{
+    z-index: 1 !important;
+    display: block !important;
+}
+@media only screen and (max-width: 980px){
+    .slider{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 10%;
     }
 }
