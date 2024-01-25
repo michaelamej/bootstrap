@@ -8,6 +8,7 @@
 body{
     background-color: #f1f3f4;
     font-family: sans-serif;
+    overflow: hidden;
 }
 .top-nav-bar {
     height: 90px;
@@ -200,7 +201,7 @@ span.material-symbols-outlined.arrow{
 
 
 .slider{
-    width: 85%;
+    width: 65%;
     margin-left: 15%;
     padding: 0 10px;
 }
@@ -218,3 +219,63 @@ span.material-symbols-outlined.arrow{
         margin-right: 10%;
     }
 }
+/*--------------------featured cat-----------*/
+.featured-categories{
+    margin: 50px 0;
+}
+.featured-categories img{
+    width: 100%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.featured-categories img:hover{
+    transform: scale(1.4);
+    overflow: hidden;
+}
+.col-md-4 {
+    display: contents;
+    
+}
+.row {
+    margin-left: -37%;
+    padding-left: 0;
+    padding-right: 30px;
+}
+/*-----------on sale products-------------*/
+.title-box {
+    background: pink;
+    color: #fff;
+    width: 136px;
+    padding: 4px 10px;
+    height: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    border: 1px solid pink;
+    border-radius: 11px;
+    align-items: baseline;
+    margin-left: 16px;
+    padding-bottom: 46px;
+}
+.container-sale {
+    display: inline-flex;
+    z-index: 3;
+    position: absolute;
+    margin-left: -226px;
+    margin-top: -367px;
+    width: 80%;
+}
+.title-box h2 {
+    font-size: 24px;
+}
+/*.title-box::after {
+    content: '';
+    border-top: 40px solid palevioletred;
+    border-right: 50px solid transparent;
+    position: absolute;
+    display: flex;
+    margin-top: -4px;
+    margin-left: 170px;
+
+}*/
+
